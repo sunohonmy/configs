@@ -1,0 +1,7 @@
+[General]
+char=62864
+rtl=false
+selectedFont=NotoSans Nerd Font,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[MainWindow]
+ToolBarsMovable=Disabled

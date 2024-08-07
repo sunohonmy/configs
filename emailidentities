@@ -1,0 +1,13 @@
+[General]
+Default Identity=767834304
+
+[Identity #0]
+Default Domain=fedora
+Disable Fcc=false
+Identity=Hubergh Agara-Jackson
+Image Location=
+Inline Signature=
+Name=Hubergh Agara-Jackson
+Override Encryption Defaults=false
+Signature Enabled=false
+uoid=767834304

@@ -1,0 +1,10 @@
+[ExtractDialog]
+DirHistory[$e]=$HOME/Downloads/,/run/media/sunohonmy/STORE N GO/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+StatusBar=Disabled
+ToolBarsMovable=Disabled

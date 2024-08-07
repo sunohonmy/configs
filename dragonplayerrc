@@ -1,0 +1,31 @@
+[General]
+ColorSchemeHash[$d]
+File1[$e]=$HOME/Downloads/ssstwitter.com_1719500335146.mp4
+Name1[$e]=ssstwitter.com_1719500335146.mp4
+TerminalApplication[$d]
+TerminalService[$d]
+TimeFormat=1
+Volume=1
+XftAntialias[$d]
+XftHintStyle[$d]
+XftSubPixel[$d]
+font[$d]
+menuFont[$d]
+smallestReadableFont[$d]
+toolBarFont[$d]
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Phonon::AudioOutput]
+Dragon Player_Volume=1
+
+[file:///home/sunohonmy/Downloads/ssstwitter.com_1719500335146.mp4]
+Brightness=0
+Contrast=0
+Date=2024,6,27
+Hue=0
+IsVideo=false
+Position=3151
+Preferred Size=100,30
+Saturation=0

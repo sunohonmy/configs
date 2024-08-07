@@ -1,0 +1,26 @@
+[Added Associations]
+application/pdf=org.mozilla.firefox.desktop;
+image/bmp=feh.desktop;
+image/heif=feh.desktop;
+image/jpeg=feh.desktop;
+image/png=feh.desktop;
+image/webp=feh.desktop;
+inode/directory=ranger.desktop;thunar.desktop;
+text/css=code.desktop;
+text/plain=nvim.desktop;org.kde.kwrite.desktop;
+video/mp4=vlc.desktop;
+video/webm=vlc.desktop;
+
+[Default Applications]
+application/pdf=org.mozilla.firefox.desktop
+image/bmp=feh.desktop;
+image/heif=feh.desktop;
+image/jpeg=feh.desktop;
+image/png=feh.desktop;
+image/webp=feh.desktop;
+inode/directory=ranger.desktop;
+text/css=code.desktop
+text/plain=org.kde.kwrite.desktop
+video/mp4=vlc.desktop
+video/webm=vlc.desktop
+x-scheme-handler/etcher=balenaEtcher.desktop
