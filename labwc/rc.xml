@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<!--
+  This is a very simple config file with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+
+  <theme>
+    <name></name>
+    <cornerRadius>8</cornerRadius>
+    <font name="NotoSans Nerd Font" size="10" />
+    <keepBorder>yes</keepBorder>
+    <dropShadows>yes</dropShadows>
+    <font place="ActiveWindow">
+      <name>NotoSans Nerd Font</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+    <font place="InactiveWindow">
+      <name>NotoSans Nerd Font</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+    <font place="MenuItem">
+      <name>NotoSans Nerd Font</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+    <font place="OnScreenDisplay">
+      <name>NotoSans Nerd Font</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+  </theme>
+
+  <keyboard>
+    <default />
+
+    <keybind key="C-A-t">
+      <action name="Execute" command="kitty" />
+    </keybind>
+    
+    <keybind key="W-Return">
+      <action name="ShowMenu" menu="root-menu" atCursor="yes" />
+    </keybind>
+    
+    <keybind key="A-Space">
+      <action name="Execute" command="killall -SIGUSR1 waybar" />
+    </keybind>
+
+    <keybind key="A-Return">
+      <action name="Execute" command="bemenu-run -b" />
+    </keybind>
+
+    <keybind key="Print">
+      <action name="Execute">
+        <command>sh -c 'grim - | wl-copy'</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-S-s">
+      <action name="Execute">
+        <command>sh -c 'grim -g "$(slurp)" | wl-copy'</command>
+      </action>
+    </keybind>
+
+  </keyboard>
+
+  <mouse>
+    <default />
+
+    <context name="Root">
+
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="some-custom-menu" />
+      </mousebind>
+
+    </context>
+
+    <context name="Client">
+
+      <mousebind button="A-Right" action="Click">
+        <action name="ShowMenu" menu="client-menu" />
+      </mousebind>
+
+    </context>
+  </mouse>
+
+  <!--
+    The *category* attribute is optional and can be set to touch, touchpad,
+    non-touch, default or the name of a device. You can obtain device names by
+    running *libinput list-devices* as root or member of the input group.
+
+    Tap is set to *yes* by default. All others are left blank in order to use
+    device defaults.
+
+    All values are [yes|no] except for:
+      - pointerSpeed [-1.0 to 1.0]
+      - accelProfile [flat|adaptive]
+      - tapButtonMap [lrm|lmr]
+      - clickMethod [none|buttonAreas|clickfinger]
+      - sendEventsMode [yes|no|disabledOnExternalMouse]
+      - calibrationMatrix [six float values split by space]
+  -->
+<libinput>
+<device category="default">
+  <accelProfile>flat</accelProfile>
+</device>
+</libinput>
+
+<windowRules>
+  <windowRule identifier="*" serverDecoration="no"/>
+</windowRules>
+
+</labwc_config>

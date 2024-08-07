@@ -1,0 +1,31 @@
+# Set background color.
+swaybg -i  ~/Pictures/solo_leveling_ep_12_1.jpg -o '*' -m fill >/dev/null 2>&1 &
+
+# Set display configuration
+kanshi >/dev/null 2>&1 &
+
+# Launch a panel such as yambar or waybar.
+waybar >/dev/null 2>&1 &
+
+# Notifications
+mako >/dev/null 2>&1 &
+
+# Bluetooth
+blueman-applet >/dev/null 2>&1 &
+
+# Open Tablet Driver for Graphics tablet
+otd-daemon >/dev/null 2>&1 &
+
+# Mimic mouse click daemon
+ydotoold >/dev/null 2>&1 & 
+
+# Network manager applet
+nm-applet >/dev/null 2>&1 &
+
+# Lock screen after 30 minuets of inactivity
+# After another 30 minutes turn of display
+swayidle -w \
+	timeout 1800 'swaylock -f -c 000000' \
+	timeout 3600 'wlopm --off \*' \
+	resume 'wlopm --on \*' \
+	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &

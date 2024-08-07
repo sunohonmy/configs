@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+<menu id="root-menu" label="root-menu">
+	<menu id="Accessories" label="Accessories">
+		<item label="Ark" icon="ark">
+			<action name="Execute"><command>ark</command></action>
+		</item>
+		<item label="Emoji Selector" icon="preferences-desktop-emoticons">
+			<action name="Execute"><command>plasma-emojier</command></action>
+		</item>
+		<item label="Filelight" icon="filelight">
+			<action name="Execute"><command>filelight</command></action>
+		</item>
+		<item label="Files" icon="org.gnome.Nautilus">
+			<action name="Execute"><command>nautilus --new-window</command></action>
+		</item>
+		<item label="Help" icon="help-browser">
+			<action name="Execute"><command>khelpcenter</command></action>
+		</item>
+		<item label="KCalc" icon="accessories-calculator">
+			<action name="Execute"><command>kcalc</command></action>
+		</item>
+		<item label="KCharSelect" icon="accessories-character-map">
+			<action name="Execute"><command>kcharselect --qwindowtitle</command></action>
+		</item>
+		<item label="KFind" icon="kfind">
+			<action name="Execute"><command>kfind</command></action>
+		</item>
+		<item label="KGpg" icon="kgpg">
+			<action name="Execute"><command>kgpg</command></action>
+		</item>
+		<item label="KMail Import Wizard" icon="kontact-import-wizard">
+			<action name="Execute"><command>akonadiimportwizard</command></action>
+		</item>
+		<item label="KMouseTool" icon="kmousetool">
+			<action name="Execute"><command>kmousetool -qwindowtitle</command></action>
+		</item>
+		<item label="KMouth" icon="kmouth">
+			<action name="Execute"><command>kmouth</command></action>
+		</item>
+		<item label="KWrite" icon="kwrite">
+			<action name="Execute"><command>kwrite</command></action>
+		</item>
+		<item label="Neovim" icon="nvim">
+			<action name="Execute"><command>nvim</command></action>
+		</item>
+		<item label="Spectacle" icon="spectacle">
+			<action name="Execute"><command>/usr/bin/spectacle</command></action>
+		</item>
+		<item label="Welcome Centre" icon="start-here-kde-plasma">
+			<action name="Execute"><command>plasma-welcome</command></action>
+		</item>
+	</menu> <!-- Accessories -->
+	<menu id="Development" label="Development">
+		<item label="Godot Engine" icon="godot">
+			<action name="Execute"><command>godot</command></action>
+		</item>
+		<item label="Visual Studio Code" icon="vscode">
+			<action name="Execute"><command>/usr/share/code/code</command></action>
+		</item>
+	</menu> <!-- Development -->
+	<menu id="Education" label="Education">
+		<item label="LibreOffice Math" icon="libreoffice-math">
+			<action name="Execute"><command>libreoffice --math</command></action>
+		</item>
+	</menu> <!-- Education -->
+	<menu id="Games" label="Games">
+		<item label="KMahjongg" icon="kmahjongg">
+			<action name="Execute"><command>kmahjongg -qwindowtitle</command></action>
+		</item>
+		<item label="KMines" icon="kmines">
+			<action name="Execute"><command>kmines -qwindowtitle</command></action>
+		</item>
+		<item label="KPatience" icon="kpat">
+			<action name="Execute"><command>kpat -qwindowtitle</command></action>
+		</item>
+		<item label="Steam" icon="steam">
+			<action name="Execute"><command>/usr/bin/steam</command></action>
+		</item>
+	</menu> <!-- Games -->
+	<menu id="Graphics" label="Graphics">
+		<item label="Blender" icon="blender">
+			<action name="Execute"><command>blender</command></action>
+		</item>
+		<item label="Gwenview" icon="gwenview">
+			<action name="Execute"><command>gwenview</command></action>
+		</item>
+		<item label="KolourPaint" icon="kolourpaint">
+			<action name="Execute"><command>kolourpaint</command></action>
+		</item>
+		<item label="LibreOffice Draw" icon="libreoffice-draw">
+			<action name="Execute"><command>libreoffice --draw</command></action>
+		</item>
+		<item label="Okular" icon="okular">
+			<action name="Execute"><command>okular</command></action>
+		</item>
+		<item label="Skanpage" icon="skanpage">
+			<action name="Execute"><command>skanpage</command></action>
+		</item>
+	</menu> <!-- Graphics -->
+	<menu id="Internet" label="Internet">
+		<item label="Akregator" icon="akregator">
+			<action name="Execute"><command>akregator</command></action>
+		</item>
+		<item label="Chatterino" icon="com.chatterino.chatterino">
+			<action name="Execute"><command>chatterino</command></action>
+		</item>
+		<item label="Contact Print Theme Editor" icon="kaddressbook">
+			<action name="Execute"><command>contactprintthemeeditor</command></action>
+		</item>
+		<item label="Contact Theme Editor" icon="kaddressbook">
+			<action name="Execute"><command>contactthemeeditor</command></action>
+		</item>
+		<item label="Discord" icon="discord">
+			<action name="Execute"><command>/usr/lib64/discord/wrapper.sh</command></action>
+		</item>
+		<item label="Firefox" icon="firefox">
+			<action name="Execute"><command>firefox</command></action>
+		</item>
+		<item label="KDE Connect" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-app</command></action>
+		</item>
+		<item label="KDE Connect Indicator" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-indicator</command></action>
+		</item>
+		<item label="KDE Connect SMS" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-sms</command></action>
+		</item>
+		<item label="KMail" icon="kmail">
+			<action name="Execute"><command>kmail -qwindowtitle</command></action>
+		</item>
+		<item label="KMail Header Theme Editor" icon="kmail">
+			<action name="Execute"><command>headerthemeeditor</command></action>
+		</item>
+		<item label="KMail Refresh Settings" icon="kmail">
+			<action name="Execute"><command>kmail-refresh-settings -qwindowtitle</command></action>
+		</item>
+		<item label="KRDC" icon="krdc">
+			<action name="Execute"><command>krdc -qwindowtitle</command></action>
+		</item>
+		<item label="Krfb" icon="krfb">
+			<action name="Execute"><command>krfb -qwindowtitle</command></action>
+		</item>
+		<item label="KTnef" icon="ktnef">
+			<action name="Execute"><command>ktnef</command></action>
+		</item>
+		<item label="NeoChat" icon="org.kde.neochat">
+			<action name="Execute"><command>neochat</command></action>
+		</item>
+		<item label="PIM Data Exporter" icon="kontact">
+			<action name="Execute"><command>pimdataexporter</command></action>
+		</item>
+		<item label="Sieve Editor" icon="sieveeditor">
+			<action name="Execute"><command>sieveeditor</command></action>
+		</item>
+		<item label="Steam" icon="steam">
+			<action name="Execute"><command>/usr/bin/steam</command></action>
+		</item>
+	</menu> <!-- Internet -->
+	<menu id="Multimedia" label="Multimedia">
+		<item label="Dragon Player" icon="dragonplayer">
+			<action name="Execute"><command>dragon</command></action>
+		</item>
+		<item label="Elisa" icon="elisa">
+			<action name="Execute"><command>elisa</command></action>
+		</item>
+		<item label="Kamoso" icon="kamoso">
+			<action name="Execute"><command>kamoso -qwindowtitle</command></action>
+		</item>
+	</menu> <!-- Multimedia -->
+	<menu id="Office" label="Office">
+		<item label="Contact Print Theme Editor" icon="kaddressbook">
+			<action name="Execute"><command>contactprintthemeeditor</command></action>
+		</item>
+		<item label="Contact Theme Editor" icon="kaddressbook">
+			<action name="Execute"><command>contactthemeeditor</command></action>
+		</item>
+		<item label="KAddressBook" icon="kaddressbook">
+			<action name="Execute"><command>kaddressbook</command></action>
+		</item>
+		<item label="KMail" icon="kmail">
+			<action name="Execute"><command>kmail -qwindowtitle</command></action>
+		</item>
+		<item label="KMail Header Theme Editor" icon="kmail">
+			<action name="Execute"><command>headerthemeeditor</command></action>
+		</item>
+		<item label="KMail Refresh Settings" icon="kmail">
+			<action name="Execute"><command>kmail-refresh-settings -qwindowtitle</command></action>
+		</item>
+		<item label="Kontact" icon="kontact">
+			<action name="Execute"><command>kontact</command></action>
+		</item>
+		<item label="KOrganizer" icon="korganizer">
+			<action name="Execute"><command>korganizer</command></action>
+		</item>
+		<item label="KTnef" icon="ktnef">
+			<action name="Execute"><command>ktnef</command></action>
+		</item>
+		<item label="LibreOffice Calc" icon="libreoffice-calc">
+			<action name="Execute"><command>libreoffice --calc</command></action>
+		</item>
+		<item label="LibreOffice Draw" icon="libreoffice-draw">
+			<action name="Execute"><command>libreoffice --draw</command></action>
+		</item>
+		<item label="LibreOffice Impress" icon="libreoffice-impress">
+			<action name="Execute"><command>libreoffice --impress</command></action>
+		</item>
+		<item label="LibreOffice Math" icon="libreoffice-math">
+			<action name="Execute"><command>libreoffice --math</command></action>
+		</item>
+		<item label="LibreOffice Writer" icon="libreoffice-writer">
+			<action name="Execute"><command>libreoffice --writer</command></action>
+		</item>
+		<item label="Okular" icon="okular">
+			<action name="Execute"><command>okular</command></action>
+		</item>
+		<item label="Sieve Editor" icon="sieveeditor">
+			<action name="Execute"><command>sieveeditor</command></action>
+		</item>
+	</menu> <!-- Office -->
+	<menu id="Settings" label="Settings">
+		<item label="Firewall" icon="firewall-config">
+			<action name="Execute"><command>/usr/bin/firewall-config</command></action>
+		</item>
+		<item label="Input Method Selector" icon="im-chooser">
+			<action name="Execute"><command>im-chooser</command></action>
+		</item>
+		<item label="KDE Connect Settings" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-settings</command></action>
+		</item>
+		<item label="KDE System Settings" icon="preferences-system">
+			<action name="Execute"><command>systemsettings</command></action>
+		</item>
+		<item label="System Settings" icon="preferences-system">
+			<action name="Execute"><command>systemsettings</command></action>
+		</item>
+	</menu> <!-- Settings -->
+	<menu id="System" label="System">
+		<item label="Crashed Processes Viewer" icon="tools-report-bug">
+			<action name="Execute"><command>drkonqi-coredump-gui</command></action>
+		</item>
+		<item label="Discover" icon="plasmadiscover">
+			<action name="Execute"><command>plasma-discover</command></action>
+		</item>
+		<item label="Dolphin" icon="org.kde.dolphin">
+			<action name="Execute"><command>dolphin</command></action>
+		</item>
+		<item label="Fedora Media Writer" icon="org.fedoraproject.MediaWriter">
+			<action name="Execute"><command>mediawriter</command></action>
+		</item>
+		<item label="Firewall" icon="firewall-config">
+			<action name="Execute"><command>/usr/bin/firewall-config</command></action>
+		</item>
+		<item label="GParted" icon="gparted">
+			<action name="Execute"><command>/usr/bin/gparted</command></action>
+		</item>
+		<item label="Info Centre" icon="hwinfo">
+			<action name="Execute"><command>kinfocenter</command></action>
+		</item>
+		<item label="KDE Partition Manager" icon="partitionmanager">
+			<action name="Execute"><command>partitionmanager</command></action>
+		</item>
+		<item label="kitty" icon="kitty">
+			<action name="Execute"><command>kitty</command></action>
+		</item>
+		<item label="Konsole" icon="utilities-terminal">
+			<action name="Execute"><command>konsole</command></action>
+		</item>
+		<item label="KWalletManager" icon="kwalletmanager">
+			<action name="Execute"><command>kwalletmanager5</command></action>
+		</item>
+		<item label="Menu Editor" icon="kmenuedit">
+			<action name="Execute"><command>kmenuedit</command></action>
+		</item>
+		<item label="Problem Reporting" icon="org.freedesktop.GnomeAbrt">
+			<action name="Execute"><command>gnome-abrt</command></action>
+		</item>
+		<item label="System Monitor" icon="utilities-system-monitor">
+			<action name="Execute"><command>plasma-systemmonitor</command></action>
+		</item>
+	</menu> <!-- System -->
+	<menu id="Other" label="Other">
+		<item label="NordVPN" icon="nordvpn">
+			<action name="Execute"><command>nordvpn click</command></action>
+		</item>
+	</menu> <!-- Other -->
+	<item label="Reset Waybar">
+		<action name="Execute"><command>killall -SIGUSR2 waybar</command></action>
+	</item>
+	<item label="Reconfigure">
+		<action name="Reconfigure" />
+	</item>
+	<item label="Exit">
+		<action name="Exit" />
+	</item>
+	<item label="Poweroff">
+		<action name="Execute" command="systemctl -i poweroff" />
+	</item>
+</menu> <!-- root-menu -->
+</openbox_menu>
