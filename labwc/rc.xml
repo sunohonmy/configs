@@ -1,97 +1,96 @@
 <?xml version="1.0"?>
-
 <!--
   This is a very simple config file with many options missing. For a complete
   set of options with comments, see docs/rc.xml.all
 -->
-
 <labwc_config>
-
+  <core>
+    <decoration>server</decoration>
+    <gap>0</gap>
+    <adaptiveSync>no</adaptiveSync>
+    <allowTearing>no</allowTearing>
+    <reuseOutputMode>no</reuseOutputMode>
+  </core>
   <theme>
-    <name></name>
+    <name>Triste-Violet</name>
     <cornerRadius>8</cornerRadius>
-    <font name="NotoSans Nerd Font" size="10" />
+    <font name="NotoSans Nerd Font" size="11"/>
     <keepBorder>yes</keepBorder>
     <dropShadows>yes</dropShadows>
     <font place="ActiveWindow">
       <name>NotoSans Nerd Font</name>
-      <size>10</size>
+      <size>11</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
     <font place="InactiveWindow">
       <name>NotoSans Nerd Font</name>
-      <size>10</size>
+      <size>11</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
     <font place="MenuItem">
       <name>NotoSans Nerd Font</name>
-      <size>10</size>
+      <size>11</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
     <font place="OnScreenDisplay">
       <name>NotoSans Nerd Font</name>
-      <size>10</size>
+      <size>11</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
   </theme>
-
   <keyboard>
-    <default />
-
+    <default/>
     <keybind key="C-A-t">
-      <action name="Execute" command="kitty" />
+      <action name="Execute" command="kitty"/>
     </keybind>
-    
     <keybind key="W-Return">
-      <action name="ShowMenu" menu="root-menu" atCursor="yes" />
+      <action name="ShowMenu" menu="root-menu" atCursor="yes"/>
     </keybind>
-    
     <keybind key="A-Space">
-      <action name="Execute" command="killall -SIGUSR1 waybar" />
+      <action name="Execute" command="killall -SIGUSR1 waybar"/>
     </keybind>
-
     <keybind key="A-Return">
-      <action name="Execute" command="bemenu-run -b" />
+      <action name="Execute" command="wofi --show run"/>
     </keybind>
-
     <keybind key="Print">
       <action name="Execute">
         <command>sh -c 'grim - | wl-copy'</command>
       </action>
     </keybind>
-
     <keybind key="W-S-s">
       <action name="Execute">
-        <command>sh -c 'grim -g "$(slurp)" | wl-copy'</command>
+        <command>sh -c 'grim -t jpeg -g "$(slurp)" ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg'</command>
       </action>
     </keybind>
-
+    <keybind key="W-C-S-r">
+      <action name="Execute">
+        <command>killall -SIGUSR2 waybar</command>
+      </action>
+    </keybind>
+    <keybind key="W-C-r">
+      <action name="Reconfigure" />
+    </keybind>
+    <keybind key="W-C-q">
+      <action name="Exit" />
+    </keybind>
   </keyboard>
-
   <mouse>
-    <default />
-
+    <default/>
     <context name="Root">
-
       <mousebind button="Right" action="Press">
-        <action name="ShowMenu" menu="some-custom-menu" />
+        <action name="ShowMenu" menu="some-custom-menu"/>
       </mousebind>
-
     </context>
-
     <context name="Client">
-
       <mousebind button="A-Right" action="Click">
-        <action name="ShowMenu" menu="client-menu" />
+        <action name="ShowMenu" menu="client-menu"/>
       </mousebind>
-
     </context>
   </mouse>
-
   <!--
     The *category* attribute is optional and can be set to touch, touchpad,
     non-touch, default or the name of a device. You can obtain device names by
@@ -108,14 +107,16 @@
       - sendEventsMode [yes|no|disabledOnExternalMouse]
       - calibrationMatrix [six float values split by space]
   -->
-<libinput>
-<device category="default">
-  <accelProfile>flat</accelProfile>
-</device>
-</libinput>
-
-<windowRules>
-  <windowRule identifier="*" serverDecoration="no"/>
-</windowRules>
-
+  <libinput>
+    <device category="default">
+      <accelProfile>flat</accelProfile>
+      <naturalScroll>no</naturalScroll>
+    </device>
+  </libinput>
+  <windowRules>
+    <windowRule identifier="*" serverDecoration="default"/>
+  </windowRules>
+  <placement>
+    <policy>Automatic</policy>
+  </placement>
 </labwc_config>

@@ -4,7 +4,7 @@
     "color": "cyan"
   },
   "logo": {
-    "color": {"1": "cyan", "2": "white"}
+    "color": {"1": "cyan"}
   },
   "modules": [
     "title",
@@ -12,15 +12,12 @@
     "os",
     "host",
     "kernel",
-    "packages",
     "terminal",
     "shell",
     "separator",
     "display",
     "de",
     "wm",
-    "font",
-    "terminalfont",
     "cpu",
     "gpu",
     "memory",

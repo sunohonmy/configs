@@ -1,5 +1,8 @@
 # Set background color.
-swaybg -i  ~/Pictures/solo_leveling_ep_12_1.jpg -o '*' -m fill >/dev/null 2>&1 &
+swaybg -i  ~/Pictures/Purple-Planet-Forest.jpg -o '*' -m fill >/dev/null 2>&1 &
+
+# Clipboard manager
+wl-paste --watch cliphist store &
 
 # Set display configuration
 kanshi >/dev/null 2>&1 &
@@ -10,7 +13,7 @@ waybar >/dev/null 2>&1 &
 # Notifications
 mako >/dev/null 2>&1 &
 
-# Bluetooth
+# Bluetooth applet
 blueman-applet >/dev/null 2>&1 &
 
 # Open Tablet Driver for Graphics tablet
@@ -21,6 +24,9 @@ ydotoold >/dev/null 2>&1 &
 
 # Network manager applet
 nm-applet >/dev/null 2>&1 &
+
+#Authentication
+/usr/lib/polkit-kde-authentication-agent-1 &
 
 # Lock screen after 30 minuets of inactivity
 # After another 30 minutes turn of display
