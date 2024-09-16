@@ -54,7 +54,10 @@
       <action name="Execute" command="killall -SIGUSR1 waybar"/>
     </keybind>
     <keybind key="A-Return">
-      <action name="Execute" command="wofi --show run"/>
+      <action name="Execute" command="rofi -show drun -show-icons"/>
+    </keybind>
+    <keybind key="A-S-Return">
+      <action name="Execute" command="rofi -show run -show-icons"/>
     </keybind>
     <keybind key="Print">
       <action name="Execute">
@@ -68,7 +71,7 @@
     </keybind>
     <keybind key="W-C-S-r">
       <action name="Execute">
-        <command>killall -SIGUSR2 waybar</command>
+        <command>s</command>
       </action>
     </keybind>
     <keybind key="W-C-r">
@@ -117,6 +120,6 @@
     <windowRule identifier="*" serverDecoration="default"/>
   </windowRules>
   <placement>
-    <policy>Automatic</policy>
+    <policy>center</policy>
   </placement>
 </labwc_config>

@@ -1,3 +1,9 @@
 [submodule "qtile"]
 	path = qtile
 	url = https://github.com/sunohonmy/qtile_config
+[submodule "hypr"]
+	path = hypr
+	url = https://github.com/sunohonmy/hyprlandConfig.git
+[submodule "waybar"]
+	path = waybar
+	url = https://github.com/sunohonmy/waybarConfig.git

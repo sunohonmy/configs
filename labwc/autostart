@@ -1,6 +1,9 @@
 # Set background color.
 swaybg -i  ~/Pictures/Purple-Planet-Forest.jpg -o '*' -m fill >/dev/null 2>&1 &
 
+# Colour temperature
+gammastep-indicator &
+
 # Clipboard manager
 wl-paste --watch cliphist store &
 
